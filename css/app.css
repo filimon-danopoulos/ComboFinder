@@ -1,0 +1,237 @@
+body
+{
+  padding: 5px;
+}
+.hidden
+{
+  display: none;
+}
+#loading-frame
+{
+  text-align:center;
+}
+#nav-bar
+{
+  position: fixed;
+  width: 100%;
+  margin-left: -5px;
+  top: 0px;
+  z-index: 10;
+}
+#content
+{
+  position: relative;
+  top: 55px;
+  padding-bottom: 200px;
+}
+#search-field 
+{
+  width: 90% !important;
+  margin-left: 4%;
+  margin-right: 6%;
+  margin-bottom: -10px !important;
+}
+
+#search-button
+{
+  margin-top: 15px !important;
+  text-align: center;
+  clear: both;
+}
+
+#search-form
+{
+  margin-top: 5px;
+}
+#search-form > .well
+{
+  overflow: auto;
+}
+.card-header
+{
+  margin-bottom: 0px;
+  margin-top: -10px;
+  text-align: center;
+}
+.checkbox-header
+{
+  margin-bottom: 10px;
+  margin-top: -10px;
+  text-align: center;
+}
+.checkbox-position-left
+{
+  width: 45%;
+  float: left;
+  margin-left: 5%;
+}
+
+.checkbox-position-right
+{
+  width: 40%;
+  float: right;
+  margin-left: 10%;
+}
+
+.checkbox > img
+{
+  margin-top: -6px;
+}
+.radio-container
+{
+  width: 100%;
+  overflow: auto;
+  clear: both;
+}
+.radio-label
+{
+  float: left;
+  width: 60%;
+}
+.radio-position-right
+{
+  float: right;
+  width: 15%;
+}
+
+.radio-position-left
+{
+  float: left;
+  width: 10%;
+}
+#search-result
+{
+  margin-top: 5px;
+}
+#about-content
+{
+  margin-top: 5px;
+}
+.combo-container-header
+{
+  margin-top: -10px;
+  margin-bottom: 5px;
+  margin-left: 8px;
+}
+.combo-container-icons
+{
+  margin-top: -10px;
+  height: 40px;
+}
+.combo-container-icons-left
+{
+  float: left;
+  height: 30px;
+  width: 30%;
+  text-align: left;
+}
+.combo-container-icons-right
+{
+  float: right;
+  height: 30px;
+  width: 60%;
+  text-align: right;
+}
+.combo-container-cards 
+{
+  margin-top: 10px;
+  margin-left: -25px;
+  margin-right: -5px;
+  clear: both;
+}
+.combo-container-cards > ul
+{
+  margin-left: 20px;
+  font-size:16px;
+}
+.combo-container-cards li
+{
+  width: 100%;
+  clear: both;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-left: 3px;
+}
+.expand-image-button
+{
+  float: right;
+  margin-top: -3px;
+  margin-right: 5px;
+}
+.card-image 
+{
+  text-align: center;
+}
+.card-image > img
+{
+  margin-top: 5px;
+}
+.combo-container-explanation > ol
+{
+  margin-top: -10px !important;
+}
+
+.combo-container-expand-button
+{
+  width: 100%;
+  clear: both; 
+  margin-top: 10px;
+}
+.horizontal-line
+{
+  width: 100%;
+  height: 2px;
+  background-color: #DFDFDF;
+}
+
+.page-controller
+{
+  position:relative;
+  overflow:auto;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.previous-page-button
+{
+  position:absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.page-info
+{
+  position:absolute;
+  top: 10px;
+  left: 35px;
+  right: 35px;
+  text-align:center; 
+  font-weight: bold;
+}
+
+.next-page-button
+{
+  position:absolute;
+  top: 5px;
+  right: 5px;
+}
+.combo-bottom-menu
+{
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+}
+
+@media only screen and (min-width: 800px)
+{
+  body
+  {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #nav-bar
+  {
+    width: 500px;
+    margin-left: 0px;
+  }
+}

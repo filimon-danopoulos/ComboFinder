@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Combo Finder</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div id="nav-bar" class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+          <li id="nav-find" class="active"><a href="#find">Find</a></li>
+          <li id="nav-combos"><a href="#combos">Combos</a></li>
+          <li id="nav-about"><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content">
+      <div id="search-form">
+        <div class="well">    
+          <h4 class="text-center card-header">Card</h4>
+          <input id="search-field" type="text" placeholder="Card name...">
+        </div>
+        <div class="well">
+          <h4 class="checkbox-header">Colors</h4>
+          <div class="checkbox-position-left">
+            <label class="checkbox">
+              <input type="checkbox" value="w" class="color-selection">
+              <img src="media/w.png" height="15" width="15">&nbsp;White
+            </label>
+          </div>
+          <div class="checkbox-position-right">
+            <label class="checkbox">
+              <input type="checkbox" value="u" class="color-selection">
+              <img src="media/u.png" height="15" width="15">&nbsp;Blue
+            </label>
+          </div>
+          <div class="checkbox-position-left">
+            <label class="checkbox">
+              <input type="checkbox" value="b" class="color-selection">
+              <img src="media/b.png" height="15" width="15">&nbsp;Black
+            </label>
+          </div>
+          <div class="checkbox-position-right">
+            <label class="checkbox">
+              <input type="checkbox" value="r" class="color-selection">
+              <img src="media/r.png" height="15" width="15">&nbsp;Red
+            </label>
+          </div>
+          <div class="checkbox-position-left">
+            <label class="checkbox">
+              <input type="checkbox" value="g" class="color-selection">
+              <img src="media/g.png" height="15" width="15">&nbsp;Green
+            </label>
+          </div>
+          <div class="checkbox-position-right">
+            <label class="checkbox">
+              <input type="checkbox" value="x" class="color-selection">
+              <img src="media/x.png" height="15" width="15">&nbsp;Artifact
+            </label>
+          </div>
+        </div>
+        <div class="well">
+          <h4 class="checkbox-header">Types</h4>
+          <div class="checkbox-position-left">
+            <label class="checkbox">
+              <input type="checkbox" value="mana" class="type-selection">
+              <img src="media/mana.png" height="15" width="15">&nbsp;Infinite mana
+            </label>
+          </div>
+          <div class="checkbox-position-right">
+            <label class="checkbox">
+              <input type="checkbox" value="draw" class="type-selection">
+              <img src="media/draw.png" height="15" width="15">&nbsp;Card draw
+            </label>
+          </div>
+          <div class="checkbox-position-left">
+            <label class="checkbox">
+              <input type="checkbox" value="damage" class="type-selection">
+              <img src="media/damage.png" height="15" width="15">&nbsp;Damage
+            </label>
+          </div>
+          <div class="checkbox-position-right">
+            <label class="checkbox">
+              <input type="checkbox" value="turn" class="type-selection">
+              <img src="media/turn.png" height="15" width="15">&nbsp;Extra turns
+            </label>
+          </div>
+          <div class="checkbox-position-left">
+            <label class="checkbox">
+              <input type="checkbox" value="destroy" class="type-selection">
+              <img src="media/destroy.png" height="15" width="15">&nbsp;Destroy/Exile
+            </label>
+          </div>
+          <div class="checkbox-position-right">
+            <label class="checkbox">
+              <input type="checkbox" value="tutor" class="type-selection">
+              <img src="media/tutor.png" height="15" width="15">&nbsp;Tutor
+            </label>
+          </div>
+          <div class="checkbox-position-left">
+            <label class="checkbox">
+              <input type="checkbox" value="life" class="type-selection">
+              <img src="media/life.png" height="15" width="15">&nbsp;Life gain
+            </label>
+          </div>
+          <div class="checkbox-position-right">
+            <label class="checkbox">
+              <input type="checkbox" value="mill" class="type-selection">
+              <img src="media/mill.png" height="15" width="15">&nbsp;Mill
+            </label>
+          </div>
+        </div>
+        
+        <div class="well">
+          <h4 class="checkbox-header">Options</h4>
+          <div class="radio-container">
+            <div class="radio-label">
+              <label class="inline">
+                Allow aditional colors?
+              </label>
+            </div>
+            <div class="radio-position-left">
+              <label class="radio">
+                <input type="radio" class="color-radio" name="color-radio" id="color-radio-yes" value="true" checked>
+                Yes
+              </label>
+            </div>
+            <div class="radio-position-right">
+              <label class="radio">
+                <input type="radio" class="color-radio" name="color-radio" id="color-radio-no" value="false">
+                No
+              </label>
+            </div>
+          </div>
+          <div class="radio-container">
+            <div class="radio-label">
+              <label class="inline">
+                Allow aditional types?
+              </label>
+            </div>
+            <div class="radio-position-left">
+              <label class="radio">
+                <input type="radio" class="type-radio" name="type-radio" id="type-radio-yes" value="true" checked>
+                Yes
+              </label>
+            </div>
+            <div class="radio-position-right">
+              <label class="radio">
+                <input type="radio" class="type-radio" name="type-radio" id="type-radio-no" value="false">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+        <div id="search-button">              
+          <button class="btn btn-success">Find combos</button>
+        </div>
+      </div>
+      
+      <div id="search-result" class="hidden">
+        <h4 class="text-center">No search made!</h4>
+        <div class="text-center"><a href="#find" class="btn btn-success">Back to search form</a></div>
+      </div>
+
+      <div id="about-content" class="hidden">
+        <div class="well">
+          <h4 class="text-center">Credits</h4>
+          <p>
+            The idea for this application was spawned by 
+            user <a href="http://forums.mtgsalvation.com/member.php?u=73033">mazanostra's</a>
+            efforts towards compiling a list of infinite combos for EDH. The list in raw format can be found 
+            <a href="http://forums.mtgsalvation.com/showthread.php?t=395024">here</a>. 
+          </p>
+          <p>
+            The explanations and descriptions are written by me.
+            Any typos or change requests can be sent <a href="mailto:filimon.danopoulos@hotmail.com">here</a>.
+          </p>
+          <p>
+            Some credit is due to <a href="http://www.magiccards.info">magiccards.info</a> a fenomenal resources for
+            images of cards.
+          </p>
+          <p>
+            All images of cards and mana symbols belong to their respective copyright holders.
+          </p>
+        </div>
+        <div class="well">
+          <h4 class="text-center">About</h4>
+          <p>The application is written and designed by <a href="mailto:filimon.danopoulos@hotmail.com">Filimon Danopoulos</a>.</p>
+          <p>If you wish to contribute send me an email.</p>
+          <p>Version: Beta 2.0</p>
+        </div>
+      </div>
+      
+    </div>
+    <script src="lib/jQuery/jquery_1.9.1.js" type="text/javascript"></script>
+    <script src="lib/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+  </body>
+</html>
