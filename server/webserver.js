@@ -1,5 +1,3 @@
-#!/usr/bin/env nodejs
-
 var http = require('http');
 var path = require('path');
 var fileSystem = require('fs');

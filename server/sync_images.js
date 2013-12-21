@@ -1,5 +1,3 @@
-#!/usr/bin/env nodejs
-
 var execute = require("child_process").exec;
 var fs = require("fs");
 var sqlite3 = require("sqlite3");
